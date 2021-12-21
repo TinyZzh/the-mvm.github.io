@@ -2,15 +2,16 @@
 layout: post
 read_time: true
 show_date: true
-title:  Single Neuron Perceptron
-date:   2021-01-25 13:32:20 -0600
+title: Single Neuron Perceptron
+date: 2021-01-25 13:32:20 -0600
 description: Single neuron perceptron that classifies elements learning quite quickly.
-img: posts/20210125/Perceptron.jpg 
+img: posts/20210125/Perceptron.jpg
 tags: [machine learning, coding, neural networks]
 author: Armando Maynez
-github:  amaynez/Perceptron/
+github: amaynez/Perceptron/
 mathjax: yes
 ---
+
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
 ## What is a perceptron?
@@ -62,7 +63,7 @@ The math behind this magical property of the perceptron is called gradient desce
 My program creates a single neuron neural network tuned to guess if a point is above or below a randomly generated line and generates a visualization based on graphs to see how the neural network is learning through time.
 
 The neuron has 3 inputs and weights to calculate its output:
-    
+
     input 1 is the X coordinate of the point,
     Input 2 is the y coordinate of the point,
     Input 3 is the bias and it is always 1
@@ -72,23 +73,23 @@ The neuron has 3 inputs and weights to calculate its output:
 The Perceptron starts with weights all set to zero and learns by using 1,000 random points per each iteration.
 
 The output of the perceptron is calculated with the following activation function:
-    if x * weight_x + y weight_y + weight_bias is positive then 1 else 0
+if x \* weight_x + y weight_y + weight_bias is positive then 1 else 0
 
 The error for each point is calculated as the expected outcome of the perceptron minus the real outcome therefore there are only 3 possible error values:
 
-|Expected  |  Calculated | Error|
-|:----:|:----:|:----:|
-|1|-1|1|
-|1|1|0|
-|-1|-1|0|
-|-1|1|-1|
+| Expected | Calculated | Error |
+| :------: | :--------: | :---: |
+|    1     |     -1     |   1   |
+|    1     |     1      |   0   |
+|    -1    |     -1     |   0   |
+|    -1    |     1      |  -1   |
 
 With every point that is learned if the error is not 0 the weights are adjusted according to:
 
     New_weight = Old_weight + error * input * learning_rate
     for example: New_weight_x = Old_weight_x + error * x * learning rate
 
-A very useful parameter in all of neural networks is teh learning rate, which is basically a measure on how tiny our nudge to the weights is going to be. 
+A very useful parameter in all of neural networks is teh learning rate, which is basically a measure on how tiny our nudge to the weights is going to be.
 
 In this particular case, I coded the learning_rate to decrease with every iteration as follows:
 
@@ -100,6 +101,6 @@ this is important to ensure that once the weights are nearing the optimal values
 
 In the end, the perceptron always converges into a solution and finds with great precision the line we are looking for.
 
-Perceptrons are quite a revelation in that they can resolve equations by learning, however they are very limited. By their nature they can only resolve linear equations, so their problem space is quite narrow. 
+Perceptrons are quite a revelation in that they can resolve equations by learning, however they are very limited. By their nature they can only resolve linear equations, so their problem space is quite narrow.
 
 Nowadays the neural networks consist of combinations of many perceptrons, in many layers, and other types of "neurons", like convolution, recurrent, etc. increasing significantly the types of problems they solve.
