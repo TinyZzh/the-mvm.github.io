@@ -1,7 +1,7 @@
 # Site settings
 title: TinyZ's Blog
 description: "专注于网络游戏前后端技术(JAVA, PHP, Unity3D)。积累技术,记录分享。"
-permalink: ":title:output_ext"
+permalink: /:categories/:year/:month/:day/:title:output_ext
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://tinyzzh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/img/branding/MVM-logo-full.svg"

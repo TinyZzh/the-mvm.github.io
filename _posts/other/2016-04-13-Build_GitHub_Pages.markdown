@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 搭建自己的GitHub Pages
-date: 2016-04-13 09:54:00 +0800
+date: 2016-04-13 09:54:00
 categories: [GitHub]
 tags: [GitHub, Blog]
 ---

@@ -1,12 +1,15 @@
 ---
 layout: post
+read_time: true
+show_date: true
 title: 面试笔试题 - 续
-date: 2016-06-04 23:42:00 +0800
+description: 面试笔试题 - 续
+date: 2016-06-04 23:42:00
 categories: [Other]
-tags: [生活]
+tags: [Other, 生活]
 ---
 
-回顾一下之前的笔试题。[URL 地址](./Interview.html)。
+回顾一下之前的笔试题。[URL 地址](./2016/06/03/Interview.html)。
 
 > 问题：有一个数组 a，有一个变量 n，大于变量 n 的放到数组的前面，小于变量 n 的放到数组的后面（不需要排序）。
 

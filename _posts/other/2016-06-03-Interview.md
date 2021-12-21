@@ -1,9 +1,12 @@
 ---
 layout: post
+read_time: true
+show_date: true
 title: 2016年离职总结
-date: 2016-06-03 12:00:00 +0800
+description: 2016年离职总结
+date: 2016-06-03 12:00:00
 categories: [Other]
-tags: [生活]
+tags: [Other, 生活]
 ---
 
 最近忙着离职的事情，O(∩_∩)O 哈哈~，自我总结一下。
@@ -81,4 +84,4 @@ public class SimpleSort {
 ```
 
 补充于 2016-06-04
-[延伸试题解决](./Interview_Next.html)
+[延伸试题解决]({{site.url}}/2016/06/04/Interview_Next.html)
